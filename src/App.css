@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 1.2em; /* 16px/16px = 1em */
+  color: #000000;
+  background-color: #f1efef;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.grid_1 { width: 15.625%; } /* 125px/800px = 15.625% */
+.grid_2 { width: 32.5%; } /* 260px/800px = 32.5% */
+.grid_3 { width: 49.375%; } /* 395px/800px = 49.375% */
+.grid_4 { width: 66.25%; } /* 530px/800px = 66.25% */
+.grid_5 { width: 83.125%; } /* 665px/800px = 83.125% */
+.grid_6 { width: 100%; } /* 800px/800px = 100% */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6 {
+  margin-right: 1.25%; /* 10px/800px = 1.25% */
+  float: left;
+  display: block;
 }
+.last {margin-right:0; }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container{
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+  padding-top: 64px;
 }
+h1 {
+  font-size: 2.750em; /* 44px/16px = 2.75em */
+  line-height: 1.25em; /* 55px/44px = 1.25em */
+  font-weight: 600;
+  letter-spacing: -2.75px;
+  color: #000000;
+}
+ 
+a:link {color:#000000; text-decoration:none;}      /* unvisited link */
+a:visited {color:#000000; text-decoration:none;}  /* visited link */
+a:hover {color:#000000; text-decoration:underline;}  /* mouse over link */
+a:active {color:#b4c34f; text-decoration:none;}  /* selected link */
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+@media screen and (max-width : 705px) {
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6 {
+  width: 100%;
+}}
